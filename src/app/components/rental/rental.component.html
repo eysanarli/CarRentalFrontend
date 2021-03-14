@@ -1,0 +1,21 @@
+<div style="text-align:center"  aria-current="true"><h4>Rentals listeleniyor</h4></div>
+<table class="table">
+   
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Araba Id</th>
+            <th>Müsteri Adı</th>
+            <th>Kiralanma Tarihi</th>
+            
+        
+        </tr>
+    </thead>
+    <tr *ngFor="let rental of rentals">
+        <td>{{rental.carId}} </td>
+        <td>{{rental.carId}} </td>
+        <td>{{rental.userName}}</td> 
+        <td>{{rental.rentDate}}</td>
+       
+    </tr>
+    </table>
