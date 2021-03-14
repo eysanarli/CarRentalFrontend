@@ -1,5 +1,5 @@
 export interface Car{
-    carId:number;
+    Id:number;
     brandName:string;
     colorName:string;
     modelYear:number;
