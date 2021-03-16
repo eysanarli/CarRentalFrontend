@@ -1,4 +1,4 @@
-export interface Car{
+export interface CarDetails{
     Id:number;
     brandName:string;
     colorName:string;

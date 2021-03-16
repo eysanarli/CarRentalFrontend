@@ -1,0 +1,30 @@
+      <div class="row">
+        <div
+          class="card col-md-3 mb-3 mx-3 pt-3 px-3"
+          style="width: 18rem"
+          *ngFor="let car of carDetails"
+          routerLink="/carDetails/{{ car.Id }}"
+        >
+          <div class="card-body">
+            <!-- <img src="https://localhost:44392\CarImages\f121a71ac5804580ab2ae5a00ecfdf04_2_28_2021.jpg"> -->
+            <p class="card-text"><b>Marka: </b>{{ car.brandName }}</p>
+            <p class="card-text"><b>Renk: </b>{{ car.colorName }}</p>
+            <p class="card-text"><b>Model Year: </b>{{ car.modelYear }}</p>
+            <p class="card-text"><b>Günlük Fiyat: </b>{{ car.dailyPrice }}</p>
+            <p class="card-text"><b>Açıklaması: </b>{{ car.descriptions }}</p>
+            <div class="row">
+              <div class="col-md-8"></div>
+              <div class="col-md-2">
+                <button mat-icon-button>
+                 save
+                </button>
+              </div>
+              <div class="col-md-2">
+                <button color="warn" mat-icon-button>
+                 close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
